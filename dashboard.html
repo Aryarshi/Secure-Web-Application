@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Dashboard</h2>
+
+<p>You are logged in ✅</p>
+
+<button onclick="logout()">Logout</button>
+
+</div>
+
+<script src="dashboard.js"></script>
+<script>
+
+const token = localStorage.getItem("token");
+
+if(!token){
+    window.location.href = "/login.html";
+}
+
+</script>
+
+
+</body>
+</html>
